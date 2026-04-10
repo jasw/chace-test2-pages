@@ -4,119 +4,434 @@
     "tz": null,
     "paper": 1,
     "qnum": "6",
-    "guess_page": 15,
-    "image": "2024_November_NOV_p1_q6.png"
+    "page": 13,
+    "candidates": [
+      {
+        "score": 9,
+        "page": 13
+      },
+      {
+        "score": 2,
+        "page": 26
+      },
+      {
+        "score": 2,
+        "page": 25
+      },
+      {
+        "score": 2,
+        "page": 24
+      },
+      {
+        "score": 2,
+        "page": 21
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "1",
-    "guess_page": 7,
-    "image": "2023_May_TZ1_p1_q1.png"
+    "page": 7,
+    "candidates": [
+      {
+        "score": 9,
+        "page": 7
+      },
+      {
+        "score": 6,
+        "page": 31
+      },
+      {
+        "score": 6,
+        "page": 30
+      },
+      {
+        "score": 6,
+        "page": 29
+      },
+      {
+        "score": 6,
+        "page": 28
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ2",
     "paper": 2,
     "qnum": "8",
-    "guess_page": 17,
-    "image": "2023_May_TZ2_p2_q8.png"
+    "page": 17,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 17
+      },
+      {
+        "score": 2,
+        "page": 25
+      },
+      {
+        "score": 2,
+        "page": 23
+      },
+      {
+        "score": 2,
+        "page": 22
+      },
+      {
+        "score": 2,
+        "page": 19
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ1",
     "paper": 2,
     "qnum": "2",
-    "guess_page": 9,
-    "image": "2023_May_TZ1_p2_q2.png"
+    "page": 8,
+    "candidates": [
+      {
+        "score": 9,
+        "page": 8
+      },
+      {
+        "score": 7,
+        "page": 4
+      },
+      {
+        "score": 4,
+        "page": 31
+      },
+      {
+        "score": 2,
+        "page": 30
+      },
+      {
+        "score": 2,
+        "page": 29
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ2",
     "paper": 1,
     "qnum": "2",
-    "guess_page": 9,
-    "image": "2023_May_TZ2_p1_q2.png"
+    "page": 9,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 9
+      },
+      {
+        "score": 7,
+        "page": 8
+      },
+      {
+        "score": 7,
+        "page": 4
+      },
+      {
+        "score": 4,
+        "page": 7
+      },
+      {
+        "score": 2,
+        "page": 28
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ2",
     "paper": 1,
     "qnum": "5",
-    "guess_page": 15,
-    "image": "2023_May_TZ2_p1_q5.png"
+    "page": 13,
+    "candidates": [
+      {
+        "score": 5,
+        "page": 13
+      },
+      {
+        "score": 2,
+        "page": 26
+      },
+      {
+        "score": 2,
+        "page": 25
+      },
+      {
+        "score": 2,
+        "page": 24
+      },
+      {
+        "score": 2,
+        "page": 18
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "5",
-    "guess_page": 15,
-    "image": "2023_May_TZ1_p1_q5.png"
+    "page": 11,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 11
+      },
+      {
+        "score": 2,
+        "page": 31
+      },
+      {
+        "score": 2,
+        "page": 24
+      },
+      {
+        "score": 2,
+        "page": 23
+      },
+      {
+        "score": 2,
+        "page": 22
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "8",
-    "guess_page": 20,
-    "image": "2023_May_TZ1_p1_q8.png"
+    "page": 16,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 16
+      },
+      {
+        "score": 2,
+        "page": 31
+      },
+      {
+        "score": 2,
+        "page": 29
+      },
+      {
+        "score": 2,
+        "page": 22
+      },
+      {
+        "score": 2,
+        "page": 21
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ2",
     "paper": 2,
     "qnum": "10",
-    "guess_page": 22,
-    "image": "2023_May_TZ2_p2_q10.png"
+    "page": 21,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 21
+      },
+      {
+        "score": 7,
+        "page": 20
+      },
+      {
+        "score": 7,
+        "page": 6
+      },
+      {
+        "score": 5,
+        "page": 19
+      },
+      {
+        "score": 2,
+        "page": 23
+      }
+    ]
   },
   {
     "session": "2024_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "11",
-    "guess_page": 27,
-    "image": "2024_May_TZ1_p1_q11.png"
+    "page": 29,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 29
+      },
+      {
+        "score": 7,
+        "page": 28
+      },
+      {
+        "score": 5,
+        "page": 27
+      },
+      {
+        "score": 2,
+        "page": 11
+      },
+      {
+        "score": 2,
+        "page": 8
+      }
+    ]
   },
   {
     "session": "2024_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "10",
-    "guess_page": 25,
-    "image": "2024_May_TZ1_p1_q10.png"
+    "page": 26,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 26
+      },
+      {
+        "score": 7,
+        "page": 25
+      },
+      {
+        "score": 7,
+        "page": 24
+      },
+      {
+        "score": 7,
+        "page": 23
+      },
+      {
+        "score": 7,
+        "page": 6
+      }
+    ]
   },
   {
     "session": "2024_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "9",
-    "guess_page": 21,
-    "image": "2024_May_TZ1_p1_q9.png"
+    "page": 21,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 21
+      },
+      {
+        "score": 5,
+        "page": 20
+      },
+      {
+        "score": 2,
+        "page": 30
+      },
+      {
+        "score": 2,
+        "page": 29
+      },
+      {
+        "score": 2,
+        "page": 26
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "4",
-    "guess_page": 13,
-    "image": "2023_May_TZ1_p1_q4.png"
+    "page": 10,
+    "candidates": [
+      {
+        "score": 7,
+        "page": 10
+      },
+      {
+        "score": 2,
+        "page": 31
+      },
+      {
+        "score": 2,
+        "page": 29
+      },
+      {
+        "score": 2,
+        "page": 28
+      },
+      {
+        "score": 2,
+        "page": 27
+      }
+    ]
   },
   {
     "session": "2023_May",
     "tz": "TZ2",
     "paper": 3,
     "qnum": "1",
-    "guess_page": 16,
-    "image": "2023_May_TZ2_p3_q1.png"
+    "page": 15,
+    "candidates": [
+      {
+        "score": 9,
+        "page": 15
+      },
+      {
+        "score": 7,
+        "page": 14
+      },
+      {
+        "score": 7,
+        "page": 13
+      },
+      {
+        "score": 7,
+        "page": 12
+      },
+      {
+        "score": 7,
+        "page": 11
+      }
+    ]
   },
   {
     "session": "2024_May",
     "tz": "TZ1",
     "paper": 1,
     "qnum": "2",
-    "guess_page": 8,
-    "image": "2024_May_TZ1_p1_q2.png"
+    "page": 8,
+    "candidates": [
+      {
+        "score": 9,
+        "page": 8
+      },
+      {
+        "score": 7,
+        "page": 3
+      },
+      {
+        "score": 2,
+        "page": 33
+      },
+      {
+        "score": 2,
+        "page": 31
+      },
+      {
+        "score": 2,
+        "page": 30
+      }
+    ]
   }
 ]
