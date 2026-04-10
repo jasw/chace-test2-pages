@@ -1,1 +1,201 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Chace Test 2 Mindmap</title><style>body{font-family:Arial,sans-serif;margin:32px;color:#222}h1{margin-bottom:6px}.sub{color:#666;margin-bottom:24px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid #ccc;border-radius:12px;padding:16px;break-inside:avoid}li{margin:6px 0}code{background:#f4f4f4;padding:1px 4px;border-radius:4px}</style></head><body><h1>IB Math AA HL Test 2 Scope Mindmap</h1><div class="sub">Generated 2026-04-10 15:57 NZ time</div><div class="grid"><section class='card'><h2>Functions (Core Ch15)</h2><ul><li><b>2.2</b>: Function concept; domain, range, graph; function notation; inverse functions; f⁻¹(x); reflection in y = x</li><li><b>2.3</b>: Function graphs; sketching from information; technology use; sums and differences of functions</li><li><b>2.4</b>: Key graph features; intersection points; composite functions; identity function; inverse functions</li><li><b>2.5</b>: Modeling with functions; piecewise/absolute value style function use in context</li><li><b>2.8</b>: Use of functions in modeling and interpreting parameters/behaviour</li></ul></section><section class='card'><h2>Transformation of Functions (Core Ch16)</h2><ul><li><b>2.11</b>: Graph transformations; translations; reflections; vertical and horizontal stretches; composite transformations</li></ul></section><section class='card'><h2>Further Functions (AA HL2 Ch6)</h2><ul><li><b>1.11</b>: Partial fractions</li><li><b>2.13</b>: Rational functions</li><li><b>2.14</b>: Odd and even functions; inverse functions with domain restriction; self-inverse functions</li><li><b>2.15</b>: Solutions of g(x) ≥ f(x), both graphically and analytically</li><li><b>2.16</b>: Solution of modulus equations and inequalities</li></ul></section><section class='card'><h2>Exponential Functions (AA HL2 Ch2)</h2><ul><li><b>1.5</b>: Laws of exponents with integer exponents; logarithms base 10 and e; numerical evaluation</li><li><b>2.9</b>: Exponential functions; logarithmic functions</li><li><b>2.10</b>: Solving equations graphically and analytically; technology use; real-life applications</li></ul></section><section class='card'><h2>Logarithms (AA HL2 Ch3, Test 2)</h2><ul><li><b>1.7</b>: Laws of exponents with rational exponents; logarithm laws; base change; solving exponential equations</li></ul></section></div><section class='card' style='margin-top:18px'><h2>How the ideas connect</h2><ul><li><code>2.2</code> ↔ <code>2.14</code>: inverse functions and domain restriction</li><li><code>2.3</code> ↔ <code>2.11</code>: graph sketching feeds transformations</li><li><code>2.4</code> ↔ <code>2.15</code>: composite/intersections lead to solving inequalities graphically</li><li><code>2.13</code> ↔ <code>1.11</code>: partial fractions decomposes rational functions</li><li><code>1.5</code> ↔ <code>2.9</code>: exponent laws support exponential models</li><li><code>2.9</code> ↔ <code>1.7</code>: logarithms are inverses of exponentials</li><li><code>2.10</code> ↔ <code>1.7</code>: solving exponential equations often uses log laws</li><li><code>2.11</code> ↔ <code>2.16</code>: modulus and transformed graphs both rely on geometric interpretation</li></ul></section><section class='card' style='margin-top:18px'><h2>Study flow</h2><ol><li>Start with core function language: domain, range, graphs, composition, inverse.</li><li>Move to transformations because every later graph relies on them.</li><li>Then do rational, odd/even, inequalities, and modulus as further functions.</li><li>Then exponential functions and solving methods.</li><li>Finish with logarithms, since they reverse exponentials and are central for solving.</li></ol></section></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chace IB Math AA HL Test 2 Mind Map</title>
+  <style>
+    :root {
+      --bg: #f6f8fc;
+      --card: #ffffff;
+      --ink: #18212f;
+      --muted: #5e6b7a;
+      --line: #9eb6d8;
+      --accent: #356dff;
+      --accent2: #7a52ff;
+      --accent3: #0ea5a4;
+      --shadow: 0 12px 30px rgba(25, 40, 72, 0.10);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--ink);
+      background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 55%);
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: 1600px; margin: 0 auto; padding: 24px; }
+    .top { text-align: center; margin-bottom: 22px; }
+    .top h1 { margin: 0; font-size: 34px; }
+    .top p { margin: 8px auto 0; max-width: 900px; color: var(--muted); }
+
+    .map { position: relative; min-height: 1120px; overflow: auto; border-radius: 28px; background: rgba(255,255,255,0.55); backdrop-filter: blur(6px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.6); }
+    svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+
+    .node {
+      position: absolute;
+      width: 280px;
+      background: var(--card);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      padding: 16px 18px;
+      border: 1px solid rgba(53,109,255,0.12);
+    }
+    .node h2, .node h3, .node h4 { margin: 0 0 8px; }
+    .node p { margin: 0; color: var(--muted); line-height: 1.4; }
+    .node ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
+    .node li { margin: 5px 0; }
+    .pill { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .02em; padding: 6px 10px; border-radius: 999px; background: #eef4ff; color: #2952c8; margin-bottom: 8px; }
+    .code { display:inline-block; font-size:12px; font-weight:700; padding:4px 8px; border-radius:999px; background:#f3f6fb; margin:4px 6px 0 0; color:#3c4b5b; }
+    .mini { font-size: 12px; color: var(--muted); margin-top: 10px; }
+
+    #center { left: 655px; top: 70px; width: 320px; background: linear-gradient(135deg,#356dff,#7a52ff); color: white; }
+    #center p, #center .mini { color: rgba(255,255,255,.92); }
+    #center .pill { background: rgba(255,255,255,.18); color: white; }
+
+    #functions { left: 120px; top: 250px; }
+    #transforms { left: 120px; top: 650px; }
+    #further { left: 1180px; top: 250px; }
+    #exp { left: 1180px; top: 650px; }
+    #logs { left: 650px; top: 930px; width: 320px; }
+
+    .topic { position:absolute; width:240px; background:#fff; border-radius:18px; padding:12px 14px; box-shadow: var(--shadow); border:1px solid rgba(14,165,164,.10); }
+    .topic h4 { font-size: 16px; }
+    .topic p { font-size: 13px; color: var(--muted); line-height: 1.35; }
+
+    #t22 { left: 420px; top: 230px; }
+    #t23 { left: 420px; top: 390px; }
+    #t24 { left: 420px; top: 550px; }
+    #t25 { left: 420px; top: 710px; }
+    #t28 { left: 420px; top: 870px; }
+
+    #t211 { left: 420px; top: 1015px; }
+
+    #t111 { left: 930px; top: 220px; }
+    #t213 { left: 930px; top: 365px; }
+    #t214 { left: 930px; top: 510px; }
+    #t215 { left: 930px; top: 655px; }
+    #t216 { left: 930px; top: 800px; }
+
+    #t15 { left: 1185px; top: 1010px; }
+    #t29 { left: 1185px; top: 855px; }
+    #t210 { left: 1185px; top: 1160px; }
+    #t17 { left: 655px; top: 1210px; }
+
+    .topic:hover, .node:hover { transform: translateY(-2px); transition: .18s ease; }
+    .legend { margin-top: 16px; color: var(--muted); font-size: 13px; }
+    @media (max-width: 1450px) { .map { min-width: 1500px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <h1>Chace IB Math AA HL Test 2, visual mind map</h1>
+      <p>A proper map of the test scope from Core HL 1 Chapter 15 and 16, plus AA HL 2 Chapters 2, 3, and 6. Click the big chapter cards or topic nodes to jump into the practice pack.</p>
+    </div>
+
+    <div class="map">
+      <svg class="links" viewBox="0 0 1600 1450" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0%" stop-color="#356dff"/><stop offset="100%" stop-color="#7a52ff"/></linearGradient>
+          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+            <path d="M0,0 L8,4 L0,8 Z" fill="#7ea0dc"></path>
+          </marker>
+        </defs>
+
+        <path d="M815 200 C 620 220, 520 300, 400 350" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+        <path d="M815 200 C 620 290, 520 690, 400 760" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+        <path d="M815 200 C 1000 220, 1080 310, 1180 350" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+        <path d="M815 200 C 1000 290, 1080 700, 1180 760" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+        <path d="M815 200 C 815 380, 815 760, 810 960" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+        <line x1="400" y1="340" x2="420" y2="260" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="400" y1="355" x2="420" y2="420" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="400" y1="370" x2="420" y2="580" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="400" y1="385" x2="420" y2="740" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="400" y1="400" x2="420" y2="900" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="400" y1="760" x2="420" y2="1045" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <line x1="1180" y1="340" x2="1170" y2="250" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="355" x2="1170" y2="395" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="370" x2="1170" y2="540" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="385" x2="1170" y2="685" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="400" x2="1170" y2="830" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <line x1="1180" y1="760" x2="1185" y2="885" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="780" x2="1185" y2="1040" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+        <line x1="1180" y1="800" x2="1185" y2="1190" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <line x1="810" y1="1080" x2="810" y2="1210" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <path d="M540 260 C 680 220, 820 220, 930 540" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+        <path d="M1185 885 C 1060 950, 920 1100, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+        <path d="M1185 1190 C 1030 1270, 920 1280, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+        <path d="M420 1045 C 520 1160, 650 1210, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
+      </svg>
+
+      <a class="node" id="center" href="practice-pack.html#overview">
+        <div class="pill">Central hub</div>
+        <h2>Test 2, linked ideas</h2>
+        <p>This test is really one big story about functions. Start with what a function is, move through graphing and transformations, then branch into rational, exponential, logarithmic, inequality, and modulus problems.</p>
+        <div class="mini">Clickable. Opens the practice pack overview.</div>
+      </a>
+
+      <a class="node" id="functions" href="practice-pack.html#functions-core-ch15">
+        <div class="pill">Core HL 1 • Chapter 15</div>
+        <h3>Functions</h3>
+        <p>Foundations: domain, range, graphs, composition, inverses, and interpreting function behaviour.</p>
+        <div><span class="code">2.2</span><span class="code">2.3</span><span class="code">2.4</span><span class="code">2.5</span><span class="code">2.8</span></div>
+      </a>
+
+      <a class="node" id="transforms" href="practice-pack.html#transformations-core-ch16">
+        <div class="pill">Core HL 1 • Chapter 16</div>
+        <h3>Transformation of Functions</h3>
+        <p>Translations, reflections, stretches, and how equations change graphs.</p>
+        <div><span class="code">2.11</span></div>
+      </a>
+
+      <a class="node" id="further" href="practice-pack.html#further-functions-aa-hl2-ch6">
+        <div class="pill">AA HL 2 • Chapter 6</div>
+        <h3>Further Functions</h3>
+        <p>Partial fractions, rational functions, odd/even ideas, graph inequalities, and modulus equations.</p>
+        <div><span class="code">1.11</span><span class="code">2.13</span><span class="code">2.14</span><span class="code">2.15</span><span class="code">2.16</span></div>
+      </a>
+
+      <a class="node" id="exp" href="practice-pack.html#exponential-functions-aa-hl2-ch2">
+        <div class="pill">AA HL 2 • Chapter 2</div>
+        <h3>Exponential Functions</h3>
+        <p>Exponent laws, exponential and logarithmic functions, and solving equations analytically or graphically.</p>
+        <div><span class="code">1.5</span><span class="code">2.9</span><span class="code">2.10</span></div>
+      </a>
+
+      <a class="node" id="logs" href="practice-pack.html#logarithms-aa-hl2-ch3">
+        <div class="pill">AA HL 2 • Chapter 3</div>
+        <h3>Logarithms</h3>
+        <p>The inverse language of exponentials. Log laws are the glue for solving and simplifying harder function equations.</p>
+        <div><span class="code">1.7</span></div>
+      </a>
+
+      <a class="topic" id="t22" href="practice-pack.html#topic-2-2"><h4>2.2 Function concept</h4><p>Domain, range, graph, notation, inverse idea, reflection in y = x.</p></a>
+      <a class="topic" id="t23" href="practice-pack.html#topic-2-3"><h4>2.3 Function graphs</h4><p>Sketching from information, sums and differences, reading graphs well.</p></a>
+      <a class="topic" id="t24" href="practice-pack.html#topic-2-4"><h4>2.4 Composite and inverse</h4><p>Composition, identity, intersections, and inverse-function thinking.</p></a>
+      <a class="topic" id="t25" href="practice-pack.html#topic-2-5"><h4>2.5 Modelling with functions</h4><p>Using function forms sensibly in context, including piecewise-style interpretation.</p></a>
+      <a class="topic" id="t28" href="practice-pack.html#topic-2-8"><h4>2.8 Function behaviour in context</h4><p>Interpreting what parameters and graph features actually mean in real situations.</p></a>
+      <a class="topic" id="t211" href="practice-pack.html#topic-2-11"><h4>2.11 Transformations</h4><p>Shift, reflect, stretch, compress, combine. Core graph fluency.</p></a>
+
+      <a class="topic" id="t111" href="practice-pack.html#topic-1-11"><h4>1.11 Partial fractions</h4><p>Break rational expressions into simpler pieces. Helpful for algebra and later calculus too.</p></a>
+      <a class="topic" id="t213" href="practice-pack.html#topic-2-13"><h4>2.13 Rational functions</h4><p>Asymptotes, zeros, intercepts, restrictions, and graph shape.</p></a>
+      <a class="topic" id="t214" href="practice-pack.html#topic-2-14"><h4>2.14 Odd, even, inverse</h4><p>Symmetry and domain restriction for inverse functions.</p></a>
+      <a class="topic" id="t215" href="practice-pack.html#topic-2-15"><h4>2.15 Graph inequalities</h4><p>When is one function above another? Read it graphically and solve it analytically.</p></a>
+      <a class="topic" id="t216" href="practice-pack.html#topic-2-16"><h4>2.16 Modulus equations/inequalities</h4><p>Absolute value creates distance-style thinking and split cases.</p></a>
+
+      <a class="topic" id="t29" href="practice-pack.html#topic-2-9"><h4>2.9 Exponential and logarithmic functions</h4><p>The shape and behaviour of growth/decay and their inverse partner.</p></a>
+      <a class="topic" id="t15" href="practice-pack.html#topic-1-5"><h4>1.5 Exponent laws</h4><p>Algebra fluency with powers, base 10, and base e.</p></a>
+      <a class="topic" id="t210" href="practice-pack.html#topic-2-10"><h4>2.10 Solving equations</h4><p>Use graphs and algebra to solve function equations in realistic settings.</p></a>
+      <a class="topic" id="t17" href="practice-pack.html#topic-1-7"><h4>1.7 Logarithm laws</h4><p>Change of base, rational exponents, and solving exponential equations via logs.</p></a>
+    </div>
+
+    <div class="legend">Solid arrows show the chapter structure. Dashed links show concept bridges, for example rational functions ↔ partial fractions and exponentials ↔ logarithms.</div>
+  </div>
+</body>
+</html>
