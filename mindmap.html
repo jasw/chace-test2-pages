@@ -5,132 +5,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chace Test 2 Mind Map</title>
   <style>
-    html, body { margin:0; padding:0; background:#030303; color:#f6eef1; font-family: Inter, Arial, sans-serif; }
+    html, body { margin:0; padding:0; background:#020202; color:#f6eef1; font-family: Inter, Arial, sans-serif; }
     .wrap { padding: 18px 18px 30px; }
     .hint { color:#d0c4cb; font-size:14px; margin:0 auto 14px; max-width:1480px; }
-    .viewport {
-      max-width: 1480px;
-      margin: 0 auto;
-      overflow: auto;
-      border-radius: 12px;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
-      background:#030303;
-    }
-    svg { width: 2200px; height: 1300px; display:block; }
+    .viewport { max-width: 1480px; margin: 0 auto; overflow: auto; border-radius: 12px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.05); background:#020202; }
+    svg { width: 3200px; height: 1900px; display:block; }
     .link { fill:none; stroke-linecap:round; stroke-width:4; opacity:.95; }
+    .thin { stroke-width:2.3; opacity:.9; }
     .root { fill:#7CFF79; filter: drop-shadow(0 0 10px rgba(124,255,121,.55)); }
     .mid { fill:#fff6f6; filter: drop-shadow(0 0 8px rgba(255,214,230,.38)); }
     .leaf { fill:#fff2f2; filter: drop-shadow(0 0 7px rgba(255,214,230,.30)); }
-    .label { fill:#f4edf0; font-size:28px; dominant-baseline:middle; }
-    .small { font-size:21px; fill:#efe5ea; }
-    .tiny { font-size:17px; fill:#d8c8d0; }
+    .micro { fill:#ffdede; filter: drop-shadow(0 0 5px rgba(255,214,230,.22)); }
+    .label { fill:#f4edf0; font-size:30px; dominant-baseline:middle; }
+    .small { font-size:22px; fill:#efe5ea; dominant-baseline:middle; }
+    .tiny { font-size:17px; fill:#d8c8d0; dominant-baseline:middle; }
     a text { text-decoration:none; }
     a:hover text { fill:#ffffff; }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <p class="hint">Sparse layout version. Pan/scroll and zoom in with your browser if needed. Click any label to jump into the relevant practice-pack section.</p>
+  <p class="hint">Expanded version. The old leaves are now parent nodes, with extra child nodes for key concepts, knowledge, and likely testing points. Zoom in and pan around.</p>
   <div class="viewport">
-  <svg viewBox="0 0 2200 1300" xmlns="http://www.w3.org/2000/svg">
-    <!-- main connectors -->
-    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 260, 560 250"/>
-    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 650, 560 650"/>
-    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 1040, 560 1050"/>
+  <svg viewBox="0 0 3200 1900" xmlns="http://www.w3.org/2000/svg">
+    <!-- trunk -->
+    <path class="link" stroke="#7CFF79" d="M170 960 C 340 960, 460 340, 700 330"/>
+    <path class="link" stroke="#7CFF79" d="M170 960 C 340 960, 460 960, 700 960"/>
+    <path class="link" stroke="#7CFF79" d="M170 960 C 340 960, 460 1580, 700 1590"/>
 
-    <path class="link" stroke="#B7FF7A" d="M600 250 C 760 250, 820 160, 1020 160"/>
-    <path class="link" stroke="#B7FF7A" d="M600 250 C 760 250, 820 350, 1020 350"/>
+    <!-- branch 1 -->
+    <path class="link" stroke="#B7FF7A" d="M740 330 C 980 330, 1100 180, 1400 180"/>
+    <path class="link" stroke="#B7FF7A" d="M740 330 C 980 330, 1100 520, 1400 520"/>
 
-    <path class="link" stroke="#FF84BC" d="M1060 160 C 1220 160, 1290 90, 1490 90"/>
-    <path class="link" stroke="#FF84BC" d="M1060 160 C 1220 160, 1290 230, 1490 230"/>
+    <path class="link" stroke="#FF84BC" d="M1440 180 C 1680 180, 1800 110, 2100 110"/>
+    <path class="link" stroke="#FF84BC" d="M1440 180 C 1680 180, 1800 250, 2100 250"/>
 
-    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 300, 1490 300"/>
-    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 410, 1490 410"/>
-    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 520, 1490 520"/>
+    <path class="link" stroke="#FF84BC" d="M1440 520 C 1680 520, 1800 390, 2100 390"/>
+    <path class="link" stroke="#FF84BC" d="M1440 520 C 1680 520, 1800 530, 2100 530"/>
+    <path class="link" stroke="#FF84BC" d="M1440 520 C 1680 520, 1800 670, 2100 670"/>
 
-    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 560, 1020 560"/>
-    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 650, 1020 650"/>
-    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 760, 1020 760"/>
+    <!-- branch 2 -->
+    <path class="link" stroke="#FFE972" d="M740 960 C 980 960, 1100 810, 1400 810"/>
+    <path class="link" stroke="#FFE972" d="M740 960 C 980 960, 1100 960, 1400 960"/>
+    <path class="link" stroke="#FFE972" d="M740 960 C 980 960, 1100 1110, 1400 1110"/>
 
-    <path class="link" stroke="#6DE2FF" d="M600 1050 C 760 1050, 820 960, 1020 960"/>
-    <path class="link" stroke="#6DE2FF" d="M600 1050 C 760 1050, 820 1050, 1020 1050"/>
+    <!-- branch 3 -->
+    <path class="link" stroke="#6DE2FF" d="M740 1590 C 980 1590, 1100 1460, 1400 1460"/>
+    <path class="link" stroke="#6DE2FF" d="M740 1590 C 980 1590, 1100 1590, 1400 1590"/>
+    <path class="link" stroke="#6DE2FF" d="M1440 1590 C 1680 1590, 1800 1590, 2100 1590"/>
 
-    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 940, 1490 940"/>
-    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 1050, 1490 1050"/>
-    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 1160, 1490 1160"/>
+    <!-- micro connectors, function concept -->
+    <path class="link thin" stroke="#FFB1D3" d="M2140 110 C 2300 110, 2360 70, 2520 70"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 110 C 2300 110, 2360 110, 2520 110"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 110 C 2300 110, 2360 150, 2520 150"/>
 
-    <path class="link" stroke="#8CE9FF" d="M1500 1050 C 1700 1050, 1760 1050, 1960 1050"/>
+    <!-- graphs -->
+    <path class="link thin" stroke="#FFB1D3" d="M2140 250 C 2300 250, 2360 210, 2520 210"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 250 C 2300 250, 2360 250, 2520 250"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 250 C 2300 250, 2360 290, 2520 290"/>
 
-    <!-- conceptual dashed links -->
-    <path class="link" stroke="#FF84BC" stroke-dasharray="8 10" d="M1490 90 C 1640 110, 1760 250, 1960 500"/>
-    <path class="link" stroke="#FF84BC" stroke-dasharray="8 10" d="M1490 230 C 1700 250, 1820 350, 1960 500"/>
-    <path class="link" stroke="#6DE2FF" stroke-dasharray="8 10" d="M1490 1050 C 1640 1040, 1800 1040, 1960 1050"/>
-    <path class="link" stroke="#6DE2FF" stroke-dasharray="8 10" d="M1490 1160 C 1640 1120, 1800 1080, 1960 1050"/>
+    <!-- composite/inverse -->
+    <path class="link thin" stroke="#FFB1D3" d="M2140 390 C 2300 390, 2360 350, 2520 350"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 390 C 2300 390, 2360 390, 2520 390"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 390 C 2300 390, 2360 430, 2520 430"/>
+
+    <!-- functions in context -->
+    <path class="link thin" stroke="#FFB1D3" d="M2140 530 C 2300 530, 2360 490, 2520 490"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 530 C 2300 530, 2360 530, 2520 530"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 530 C 2300 530, 2360 570, 2520 570"/>
+
+    <!-- behaviour -->
+    <path class="link thin" stroke="#FFB1D3" d="M2140 670 C 2300 670, 2360 630, 2520 630"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 670 C 2300 670, 2360 670, 2520 670"/>
+    <path class="link thin" stroke="#FFB1D3" d="M2140 670 C 2300 670, 2360 710, 2520 710"/>
+
+    <!-- further functions micro -->
+    <path class="link thin" stroke="#FFE972" d="M1440 810 C 1680 810, 1800 760, 2100 760"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 810 C 1680 810, 1800 810, 2100 810"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 810 C 1680 810, 1800 860, 2100 860"/>
+
+    <path class="link thin" stroke="#FFE972" d="M1440 960 C 1680 960, 1800 910, 2100 910"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 960 C 1680 960, 1800 960, 2100 960"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 960 C 1680 960, 1800 1010, 2100 1010"/>
+
+    <path class="link thin" stroke="#FFE972" d="M1440 1110 C 1680 1110, 1800 1070, 2100 1070"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 1110 C 1680 1110, 1800 1110, 2100 1110"/>
+    <path class="link thin" stroke="#FFE972" d="M1440 1110 C 1680 1110, 1800 1150, 2100 1150"/>
+
+    <!-- exponentials/logs micro -->
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1460 C 1680 1460, 1800 1410, 2100 1410"/>
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1460 C 1680 1460, 1800 1460, 2100 1460"/>
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1460 C 1680 1460, 1800 1510, 2100 1510"/>
+
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1590 C 1680 1590, 1800 1550, 2100 1550"/>
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1590 C 1680 1590, 1800 1590, 2100 1590"/>
+    <path class="link thin" stroke="#6DE2FF" d="M1440 1590 C 1680 1590, 1800 1630, 2100 1630"/>
+
+    <path class="link thin" stroke="#6DE2FF" d="M2140 1590 C 2360 1590, 2440 1540, 2700 1540"/>
+    <path class="link thin" stroke="#6DE2FF" d="M2140 1590 C 2360 1590, 2440 1590, 2700 1590"/>
+    <path class="link thin" stroke="#6DE2FF" d="M2140 1590 C 2360 1590, 2440 1640, 2700 1640"/>
 
     <!-- nodes -->
-    <circle class="root" cx="150" cy="650" r="10"/>
-    <a href="practice-pack.html#overview"><text x="40" y="650" class="label">Test 2</text></a>
+    <circle class="root" cx="150" cy="960" r="10"/>
+    <a href="practice-pack.html#overview"><text x="40" y="960" class="label">Test 2</text></a>
 
-    <circle class="mid" cx="580" cy="250" r="7"/>
-    <a href="practice-pack.html#core-hl1"><text x="390" y="250" class="label">Core HL 1</text></a>
+    <circle class="mid" cx="720" cy="330" r="7"/>
+    <a href="practice-pack.html#core-hl1"><text x="470" y="330" class="label">Core HL 1</text></a>
 
-    <circle class="leaf" cx="1040" cy="160" r="6"/>
-    <a href="practice-pack.html#functions-core-ch15"><text x="790" y="160" class="label">Ch15 Functions</text></a>
+    <circle class="leaf" cx="1420" cy="180" r="6"/>
+    <a href="practice-pack.html#functions-core-ch15"><text x="1110" y="180" class="label">Ch15 Functions</text></a>
 
-    <circle class="leaf" cx="1040" cy="350" r="6"/>
-    <a href="practice-pack.html#transformations-core-ch16"><text x="700" y="350" class="label">Ch16 Transformations</text></a>
+    <circle class="leaf" cx="1420" cy="520" r="6"/>
+    <a href="practice-pack.html#transformations-core-ch16"><text x="1020" y="520" class="label">Ch16 Transformations</text></a>
 
-    <circle class="leaf" cx="1510" cy="90" r="5"/>
-    <a href="practice-pack.html#topic-2-2"><text x="1540" y="90" class="small">2.2 Function concept</text></a>
+    <circle class="leaf" cx="2120" cy="110" r="5"/>
+    <a href="practice-pack.html#topic-2-2"><text x="1820" y="110" class="small">2.2 Function concept</text></a>
+    <circle class="micro" cx="2540" cy="70" r="4"/>
+    <text x="2570" y="70" class="tiny">domain / range</text>
+    <circle class="micro" cx="2540" cy="110" r="4"/>
+    <text x="2570" y="110" class="tiny">function notation</text>
+    <circle class="micro" cx="2540" cy="150" r="4"/>
+    <text x="2570" y="150" class="tiny">inverse exists when one-to-one</text>
 
-    <circle class="leaf" cx="1510" cy="230" r="5"/>
-    <a href="practice-pack.html#topic-2-3"><text x="1540" y="230" class="small">2.3 Graphs, sums, differences</text></a>
+    <circle class="leaf" cx="2120" cy="250" r="5"/>
+    <a href="practice-pack.html#topic-2-3"><text x="1840" y="250" class="small">2.3 Graphs</text></a>
+    <circle class="micro" cx="2540" cy="210" r="4"/>
+    <text x="2570" y="210" class="tiny">intercepts and asymptotic behaviour</text>
+    <circle class="micro" cx="2540" cy="250" r="4"/>
+    <text x="2570" y="250" class="tiny">sketch from clues, not full formula</text>
+    <circle class="micro" cx="2540" cy="290" r="4"/>
+    <text x="2570" y="290" class="tiny">sums and differences of graphs</text>
 
-    <circle class="leaf" cx="1510" cy="300" r="5"/>
-    <a href="practice-pack.html#topic-2-4"><text x="1540" y="300" class="small">2.4 Composite and inverse</text></a>
+    <circle class="leaf" cx="2120" cy="390" r="5"/>
+    <a href="practice-pack.html#topic-2-4"><text x="1800" y="390" class="small">2.4 Composite and inverse</text></a>
+    <circle class="micro" cx="2540" cy="350" r="4"/>
+    <text x="2570" y="350" class="tiny">compose in correct order</text>
+    <circle class="micro" cx="2540" cy="390" r="4"/>
+    <text x="2570" y="390" class="tiny">identity function check</text>
+    <circle class="micro" cx="2540" cy="430" r="4"/>
+    <text x="2570" y="430" class="tiny">inverse via swap x and y</text>
 
-    <circle class="leaf" cx="1510" cy="410" r="5"/>
-    <a href="practice-pack.html#topic-2-5"><text x="1540" y="410" class="small">2.5 Functions in context</text></a>
+    <circle class="leaf" cx="2120" cy="530" r="5"/>
+    <a href="practice-pack.html#topic-2-5"><text x="1810" y="530" class="small">2.5 Functions in context</text></a>
+    <circle class="micro" cx="2540" cy="490" r="4"/>
+    <text x="2570" y="490" class="tiny">interpret parameters in words</text>
+    <circle class="micro" cx="2540" cy="530" r="4"/>
+    <text x="2570" y="530" class="tiny">choose suitable model / restriction</text>
+    <circle class="micro" cx="2540" cy="570" r="4"/>
+    <text x="2570" y="570" class="tiny">state realistic domain</text>
 
-    <circle class="leaf" cx="1510" cy="520" r="5"/>
-    <a href="practice-pack.html#topic-2-8"><text x="1540" y="520" class="small">2.8 Behaviour in context</text></a>
+    <circle class="leaf" cx="2120" cy="670" r="5"/>
+    <a href="practice-pack.html#topic-2-8"><text x="1780" y="670" class="small">2.8 Behaviour in context</text></a>
+    <circle class="micro" cx="2540" cy="630" r="4"/>
+    <text x="2570" y="630" class="tiny">increasing / decreasing meaning</text>
+    <circle class="micro" cx="2540" cy="670" r="4"/>
+    <text x="2570" y="670" class="tiny">rate and end behaviour</text>
+    <circle class="micro" cx="2540" cy="710" r="4"/>
+    <text x="2570" y="710" class="tiny">what graph features mean physically</text>
 
-    <circle class="mid" cx="580" cy="650" r="7"/>
-    <a href="practice-pack.html#further-functions-aa-hl2-ch6"><text x="350" y="650" class="label">AA HL2 Ch6</text></a>
+    <circle class="mid" cx="720" cy="960" r="7"/>
+    <a href="practice-pack.html#further-functions-aa-hl2-ch6"><text x="430" y="960" class="label">AA HL2 Ch6</text></a>
 
-    <circle class="leaf" cx="1040" cy="560" r="6"/>
-    <a href="practice-pack.html#topic-1-11"><text x="820" y="560" class="small">1.11 Partial fractions</text></a>
+    <circle class="leaf" cx="1420" cy="810" r="6"/>
+    <a href="practice-pack.html#topic-1-11"><text x="1120" y="810" class="small">1.11 Partial fractions</text></a>
+    <circle class="micro" cx="2120" cy="760" r="4"/>
+    <text x="2150" y="760" class="tiny">decompose by factor type</text>
+    <circle class="micro" cx="2120" cy="810" r="4"/>
+    <text x="2150" y="810" class="tiny">equate coefficients cleanly</text>
+    <circle class="micro" cx="2120" cy="860" r="4"/>
+    <text x="2150" y="860" class="tiny">often a setup step for harder algebra</text>
 
-    <circle class="leaf" cx="1040" cy="650" r="6"/>
-    <a href="practice-pack.html#topic-2-13"><text x="810" y="650" class="small">2.13 Rational functions</text></a>
+    <circle class="leaf" cx="1420" cy="960" r="6"/>
+    <a href="practice-pack.html#topic-2-13"><text x="1090" y="960" class="small">2.13 Rational functions</text></a>
+    <circle class="micro" cx="2120" cy="910" r="4"/>
+    <text x="2150" y="910" class="tiny">zeros and asymptotes</text>
+    <circle class="micro" cx="2120" cy="960" r="4"/>
+    <text x="2150" y="960" class="tiny">domain restrictions</text>
+    <circle class="micro" cx="2120" cy="1010" r="4"/>
+    <text x="2150" y="1010" class="tiny">inverse / transformed graphs</text>
 
-    <circle class="leaf" cx="1040" cy="760" r="6"/>
-    <a href="practice-pack.html#topic-2-14"><text x="740" y="760" class="small">2.14 Odd/even and inverse restrictions</text></a>
+    <circle class="leaf" cx="1420" cy="1110" r="6"/>
+    <a href="practice-pack.html#topic-2-14"><text x="1010" y="1110" class="small">2.14 Odd/even and inverse restrictions</text></a>
+    <circle class="micro" cx="2120" cy="1070" r="4"/>
+    <text x="2150" y="1070" class="tiny">symmetry tests</text>
+    <circle class="micro" cx="2120" cy="1110" r="4"/>
+    <text x="2150" y="1110" class="tiny">restrict domain before inverting</text>
+    <circle class="micro" cx="2120" cy="1150" r="4"/>
+    <text x="2150" y="1150" class="tiny">self-inverse recognition</text>
 
-    <circle class="mid" cx="580" cy="1050" r="7"/>
-    <a href="practice-pack.html#exponential-functions-aa-hl2-ch2"><text x="390" y="1050" class="label">AA HL2 Ch2</text></a>
+    <circle class="mid" cx="720" cy="1590" r="7"/>
+    <a href="practice-pack.html#exponential-functions-aa-hl2-ch2"><text x="470" y="1590" class="label">AA HL2 Ch2</text></a>
 
-    <circle class="leaf" cx="1040" cy="960" r="6"/>
-    <a href="practice-pack.html#topic-1-5"><text x="850" y="960" class="small">1.5 Exponent laws</text></a>
+    <circle class="leaf" cx="1420" cy="1460" r="6"/>
+    <a href="practice-pack.html#topic-1-5"><text x="1160" y="1460" class="small">1.5 Exponent laws</text></a>
+    <circle class="micro" cx="2120" cy="1410" r="4"/>
+    <text x="2150" y="1410" class="tiny">index laws fluency</text>
+    <circle class="micro" cx="2120" cy="1460" r="4"/>
+    <text x="2150" y="1460" class="tiny">rewrite into comparable bases</text>
+    <circle class="micro" cx="2120" cy="1510" r="4"/>
+    <text x="2150" y="1510" class="tiny">base e and base 10 comfort</text>
 
-    <circle class="leaf" cx="1040" cy="1050" r="6"/>
-    <a href="practice-pack.html#topic-2-9"><text x="810" y="1050" class="small">2.9 Exponential functions</text></a>
+    <circle class="leaf" cx="1420" cy="1590" r="6"/>
+    <a href="practice-pack.html#topic-2-9"><text x="1080" y="1590" class="small">2.9 Exponential functions</text></a>
+    <circle class="micro" cx="2120" cy="1550" r="4"/>
+    <text x="2150" y="1550" class="tiny">growth vs decay shape</text>
+    <circle class="micro" cx="2120" cy="1590" r="4"/>
+    <text x="2150" y="1590" class="tiny">inverse link to logarithms</text>
+    <circle class="micro" cx="2120" cy="1630" r="4"/>
+    <text x="2150" y="1630" class="tiny">solve by graph or algebra</text>
 
-    <circle class="leaf" cx="1490" cy="940" r="5"/>
-    <a href="practice-pack.html#topic-2-10"><text x="1520" y="940" class="small">2.10 Graphical solving</text></a>
-
-    <circle class="leaf" cx="1490" cy="1050" r="5"/>
-    <a href="practice-pack.html#topic-2-10"><text x="1520" y="1050" class="small">2.10 Analytical solving</text></a>
-
-    <circle class="leaf" cx="1490" cy="1160" r="5"/>
-    <a href="practice-pack.html#topic-2-10"><text x="1520" y="1160" class="small">2.10 Modelling equations</text></a>
-
-    <circle class="leaf" cx="1960" cy="1050" r="6"/>
-    <a href="practice-pack.html#logarithms-aa-hl2-ch3"><text x="1730" y="1000" class="label">AA HL2 Ch3</text></a>
-    <a href="practice-pack.html#topic-1-7"><text x="1990" y="1050" class="small">1.7 Logarithm laws</text></a>
-
-    <text x="1730" y="1038" class="tiny">inverse of exponentials, change of base, solving via logs</text>
-    <text x="1730" y="482" class="tiny">graph skills and inverse thinking connect back into the core branch</text>
+    <circle class="leaf" cx="2120" cy="1590" r="6" fill="none" stroke="none"/>
+    <circle class="leaf" cx="2140" cy="1590" r="6"/>
+    <a href="practice-pack.html#topic-1-7"><text x="1850" y="1535" class="label">AA HL2 Ch3, 1.7 Logarithm laws</text></a>
+    <circle class="micro" cx="2720" cy="1540" r="4"/>
+    <text x="2750" y="1540" class="tiny">change of base</text>
+    <circle class="micro" cx="2720" cy="1590" r="4"/>
+    <text x="2750" y="1590" class="tiny">log laws and simplification</text>
+    <circle class="micro" cx="2720" cy="1640" r="4"/>
+    <text x="2750" y="1640" class="tiny">turn exponential equations into linear ones</text>
   </svg>
   </div>
 </div>
