@@ -5,124 +5,134 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chace Test 2 Mind Map</title>
   <style>
-    html, body { margin:0; padding:0; background:#050505; color:#f3e9ef; font-family: Inter, Arial, sans-serif; }
-    .wrap { padding: 20px; }
-    .hint { color:#cfc3ca; font-size:14px; margin:0 auto 14px; max-width:1200px; }
-    svg { width: 100%; height: auto; display:block; max-width: 1400px; margin: 0 auto; }
+    html, body { margin:0; padding:0; background:#030303; color:#f6eef1; font-family: Inter, Arial, sans-serif; }
+    .wrap { padding: 18px 18px 30px; }
+    .hint { color:#d0c4cb; font-size:14px; margin:0 auto 14px; max-width:1480px; }
+    .viewport {
+      max-width: 1480px;
+      margin: 0 auto;
+      overflow: auto;
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);
+      background:#030303;
+    }
+    svg { width: 2200px; height: 1300px; display:block; }
     .link { fill:none; stroke-linecap:round; stroke-width:4; opacity:.95; }
-    .root { fill:#7CFF79; filter: drop-shadow(0 0 8px rgba(124,255,121,.45)); }
-    .mid { fill:#fff6f6; filter: drop-shadow(0 0 7px rgba(255,214,230,.35)); }
-    .leaf { fill:#fff2f2; filter: drop-shadow(0 0 6px rgba(255,214,230,.28)); }
-    .label { fill:#f4edf0; font-size:25px; dominant-baseline:middle; }
-    .small { font-size:20px; fill:#efe5ea; }
+    .root { fill:#7CFF79; filter: drop-shadow(0 0 10px rgba(124,255,121,.55)); }
+    .mid { fill:#fff6f6; filter: drop-shadow(0 0 8px rgba(255,214,230,.38)); }
+    .leaf { fill:#fff2f2; filter: drop-shadow(0 0 7px rgba(255,214,230,.30)); }
+    .label { fill:#f4edf0; font-size:28px; dominant-baseline:middle; }
+    .small { font-size:21px; fill:#efe5ea; }
+    .tiny { font-size:17px; fill:#d8c8d0; }
     a text { text-decoration:none; }
     a:hover text { fill:#ffffff; }
-    .subtle { fill:#d7c6ce; font-size:15px; }
   </style>
 </head>
 <body>
 <div class="wrap">
-  <p class="hint">Click any branch label to jump into the matching section of the practice pack.</p>
-  <svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <filter id="glowPink"><feGaussianBlur stdDeviation="2.8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-      <filter id="glowGreen"><feGaussianBlur stdDeviation="3.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    </defs>
+  <p class="hint">Sparse layout version. Pan/scroll and zoom in with your browser if needed. Click any label to jump into the relevant practice-pack section.</p>
+  <div class="viewport">
+  <svg viewBox="0 0 2200 1300" xmlns="http://www.w3.org/2000/svg">
+    <!-- main connectors -->
+    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 260, 560 250"/>
+    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 650, 560 650"/>
+    <path class="link" stroke="#7CFF79" d="M180 650 C 320 650, 380 1040, 560 1050"/>
 
-    <!-- connectors -->
-    <path class="link" stroke="#7CFF79" d="M140 450 C 210 450, 220 230, 320 230"/>
-    <path class="link" stroke="#7CFF79" d="M140 450 C 210 450, 220 450, 320 450"/>
-    <path class="link" stroke="#7CFF79" d="M140 450 C 210 450, 220 650, 320 650"/>
+    <path class="link" stroke="#B7FF7A" d="M600 250 C 760 250, 820 160, 1020 160"/>
+    <path class="link" stroke="#B7FF7A" d="M600 250 C 760 250, 820 350, 1020 350"/>
 
-    <path class="link" stroke="#B7FF7A" d="M360 230 C 430 230, 440 150, 520 150"/>
-    <path class="link" stroke="#B7FF7A" d="M360 230 C 430 230, 440 310, 520 310"/>
+    <path class="link" stroke="#FF84BC" d="M1060 160 C 1220 160, 1290 90, 1490 90"/>
+    <path class="link" stroke="#FF84BC" d="M1060 160 C 1220 160, 1290 230, 1490 230"/>
 
-    <path class="link" stroke="#FF84BC" d="M560 150 C 640 150, 660 95, 760 95"/>
-    <path class="link" stroke="#FF84BC" d="M560 150 C 640 150, 660 205, 760 205"/>
+    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 300, 1490 300"/>
+    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 410, 1490 410"/>
+    <path class="link" stroke="#FF84BC" d="M1060 350 C 1220 350, 1290 520, 1490 520"/>
 
-    <path class="link" stroke="#FF84BC" d="M800 95 C 885 95, 905 65, 980 65"/>
-    <path class="link" stroke="#FF84BC" d="M800 95 C 885 95, 905 125, 980 125"/>
+    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 560, 1020 560"/>
+    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 650, 1020 650"/>
+    <path class="link" stroke="#FFE972" d="M600 650 C 760 650, 820 760, 1020 760"/>
 
-    <path class="link" stroke="#FF84BC" d="M800 205 C 885 205, 905 165, 980 165"/>
-    <path class="link" stroke="#FF84BC" d="M800 205 C 885 205, 905 205, 980 205"/>
-    <path class="link" stroke="#FF84BC" d="M800 205 C 885 205, 905 245, 980 245"/>
+    <path class="link" stroke="#6DE2FF" d="M600 1050 C 760 1050, 820 960, 1020 960"/>
+    <path class="link" stroke="#6DE2FF" d="M600 1050 C 760 1050, 820 1050, 1020 1050"/>
 
-    <path class="link" stroke="#FFE972" d="M360 450 C 430 450, 440 380, 520 380"/>
-    <path class="link" stroke="#FFE972" d="M360 450 C 430 450, 440 450, 520 450"/>
-    <path class="link" stroke="#FFE972" d="M360 450 C 430 450, 440 520, 520 520"/>
+    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 940, 1490 940"/>
+    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 1050, 1490 1050"/>
+    <path class="link" stroke="#6DE2FF" d="M1060 1050 C 1220 1050, 1290 1160, 1490 1160"/>
 
-    <path class="link" stroke="#6DE2FF" d="M360 650 C 430 650, 440 590, 520 590"/>
-    <path class="link" stroke="#6DE2FF" d="M360 650 C 430 650, 440 650, 520 650"/>
+    <path class="link" stroke="#8CE9FF" d="M1500 1050 C 1700 1050, 1760 1050, 1960 1050"/>
 
-    <path class="link" stroke="#6DE2FF" d="M560 650 C 640 650, 660 630, 760 630"/>
-    <path class="link" stroke="#6DE2FF" d="M560 650 C 640 650, 660 700, 760 700"/>
-    <path class="link" stroke="#6DE2FF" d="M560 650 C 640 650, 660 770, 760 770"/>
-
-    <path class="link" stroke="#FF84BC" stroke-dasharray="6 8" d="M760 630 C 900 560, 900 300, 980 245"/>
-    <path class="link" stroke="#6DE2FF" stroke-dasharray="6 8" d="M760 700 C 840 700, 900 740, 980 800"/>
-    <path class="link" stroke="#6DE2FF" stroke-dasharray="6 8" d="M760 770 C 860 770, 900 790, 980 800"/>
+    <!-- conceptual dashed links -->
+    <path class="link" stroke="#FF84BC" stroke-dasharray="8 10" d="M1490 90 C 1640 110, 1760 250, 1960 500"/>
+    <path class="link" stroke="#FF84BC" stroke-dasharray="8 10" d="M1490 230 C 1700 250, 1820 350, 1960 500"/>
+    <path class="link" stroke="#6DE2FF" stroke-dasharray="8 10" d="M1490 1050 C 1640 1040, 1800 1040, 1960 1050"/>
+    <path class="link" stroke="#6DE2FF" stroke-dasharray="8 10" d="M1490 1160 C 1640 1120, 1800 1080, 1960 1050"/>
 
     <!-- nodes -->
-    <circle class="root" cx="120" cy="450" r="9" filter="url(#glowGreen)"/>
-    <a href="practice-pack.html#overview"><text x="20" y="450" class="label">Test 2</text></a>
+    <circle class="root" cx="150" cy="650" r="10"/>
+    <a href="practice-pack.html#overview"><text x="40" y="650" class="label">Test 2</text></a>
 
-    <circle class="mid" cx="340" cy="230" r="6" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#core-hl1"><text x="235" y="230" class="label">Core HL 1</text></a>
+    <circle class="mid" cx="580" cy="250" r="7"/>
+    <a href="practice-pack.html#core-hl1"><text x="390" y="250" class="label">Core HL 1</text></a>
 
-    <circle class="leaf" cx="540" cy="150" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#functions-core-ch15"><text x="415" y="150" class="label">Ch15 Functions</text></a>
+    <circle class="leaf" cx="1040" cy="160" r="6"/>
+    <a href="practice-pack.html#functions-core-ch15"><text x="790" y="160" class="label">Ch15 Functions</text></a>
 
-    <circle class="leaf" cx="540" cy="310" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#transformations-core-ch16"><text x="360" y="310" class="label">Ch16 Transformations</text></a>
+    <circle class="leaf" cx="1040" cy="350" r="6"/>
+    <a href="practice-pack.html#transformations-core-ch16"><text x="700" y="350" class="label">Ch16 Transformations</text></a>
 
-    <circle class="leaf" cx="780" cy="95" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-2"><text x="610" y="95" class="small">2.2 Function concept</text></a>
-    <circle class="leaf" cx="780" cy="205" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-3"><text x="620" y="205" class="small">2.3 Graphs / 2.4 Composite & inverse</text></a>
+    <circle class="leaf" cx="1510" cy="90" r="5"/>
+    <a href="practice-pack.html#topic-2-2"><text x="1540" y="90" class="small">2.2 Function concept</text></a>
 
-    <circle class="leaf" cx="1000" cy="65" r="4.5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-5"><text x="1015" y="65" class="small">2.5 Functions in context</text></a>
-    <circle class="leaf" cx="1000" cy="125" r="4.5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-8"><text x="1015" y="125" class="small">2.8 Behaviour in context</text></a>
+    <circle class="leaf" cx="1510" cy="230" r="5"/>
+    <a href="practice-pack.html#topic-2-3"><text x="1540" y="230" class="small">2.3 Graphs, sums, differences</text></a>
 
-    <circle class="leaf" cx="1000" cy="165" r="4.5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-11"><text x="1015" y="165" class="small">2.11 Translations / reflections</text></a>
-    <circle class="leaf" cx="1000" cy="205" r="4.5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-11"><text x="1015" y="205" class="small">2.11 Stretches / compressions</text></a>
-    <circle class="leaf" cx="1000" cy="245" r="4.5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-11"><text x="1015" y="245" class="small">2.11 Combined transformations</text></a>
+    <circle class="leaf" cx="1510" cy="300" r="5"/>
+    <a href="practice-pack.html#topic-2-4"><text x="1540" y="300" class="small">2.4 Composite and inverse</text></a>
 
-    <circle class="mid" cx="340" cy="450" r="6" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#further-functions-aa-hl2-ch6"><text x="205" y="450" class="label">AA HL2 Ch6</text></a>
+    <circle class="leaf" cx="1510" cy="410" r="5"/>
+    <a href="practice-pack.html#topic-2-5"><text x="1540" y="410" class="small">2.5 Functions in context</text></a>
 
-    <circle class="leaf" cx="540" cy="380" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-1-11"><text x="390" y="380" class="small">1.11 Partial fractions</text></a>
-    <circle class="leaf" cx="540" cy="450" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-13"><text x="395" y="450" class="small">2.13 Rational functions</text></a>
-    <circle class="leaf" cx="540" cy="520" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-14"><text x="385" y="520" class="small">2.14 Odd/even, inverse restrictions</text></a>
+    <circle class="leaf" cx="1510" cy="520" r="5"/>
+    <a href="practice-pack.html#topic-2-8"><text x="1540" y="520" class="small">2.8 Behaviour in context</text></a>
 
-    <circle class="mid" cx="340" cy="650" r="6" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#exponential-functions-aa-hl2-ch2"><text x="225" y="650" class="label">AA HL2 Ch2</text></a>
-    <circle class="leaf" cx="540" cy="590" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-1-5"><text x="425" y="590" class="small">1.5 Exponent laws</text></a>
-    <circle class="leaf" cx="540" cy="650" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-9"><text x="390" y="650" class="small">2.9 Exponential functions</text></a>
+    <circle class="mid" cx="580" cy="650" r="7"/>
+    <a href="practice-pack.html#further-functions-aa-hl2-ch6"><text x="350" y="650" class="label">AA HL2 Ch6</text></a>
 
-    <circle class="leaf" cx="780" cy="630" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-10"><text x="610" y="630" class="small">2.10 Solving equations graphically</text></a>
-    <circle class="leaf" cx="780" cy="700" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-10"><text x="640" y="700" class="small">2.10 Analytical solving</text></a>
-    <circle class="leaf" cx="780" cy="770" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#topic-2-10"><text x="628" y="770" class="small">2.10 Real-life modelling equations</text></a>
+    <circle class="leaf" cx="1040" cy="560" r="6"/>
+    <a href="practice-pack.html#topic-1-11"><text x="820" y="560" class="small">1.11 Partial fractions</text></a>
 
-    <circle class="leaf" cx="1000" cy="800" r="5" filter="url(#glowPink)"/>
-    <a href="practice-pack.html#logarithms-aa-hl2-ch3"><text x="1015" y="800" class="label">AA HL2 Ch3, 1.7 Logarithm laws</text></a>
+    <circle class="leaf" cx="1040" cy="650" r="6"/>
+    <a href="practice-pack.html#topic-2-13"><text x="810" y="650" class="small">2.13 Rational functions</text></a>
 
-    <text x="1015" y="832" class="subtle">inverse of exponentials, change of base, solving via logs</text>
-    <text x="1015" y="272" class="subtle">all three branches feed graph skills used elsewhere</text>
-    <text x="1015" y="448" class="subtle">partial fractions ↔ rational functions</text>
+    <circle class="leaf" cx="1040" cy="760" r="6"/>
+    <a href="practice-pack.html#topic-2-14"><text x="740" y="760" class="small">2.14 Odd/even and inverse restrictions</text></a>
+
+    <circle class="mid" cx="580" cy="1050" r="7"/>
+    <a href="practice-pack.html#exponential-functions-aa-hl2-ch2"><text x="390" y="1050" class="label">AA HL2 Ch2</text></a>
+
+    <circle class="leaf" cx="1040" cy="960" r="6"/>
+    <a href="practice-pack.html#topic-1-5"><text x="850" y="960" class="small">1.5 Exponent laws</text></a>
+
+    <circle class="leaf" cx="1040" cy="1050" r="6"/>
+    <a href="practice-pack.html#topic-2-9"><text x="810" y="1050" class="small">2.9 Exponential functions</text></a>
+
+    <circle class="leaf" cx="1490" cy="940" r="5"/>
+    <a href="practice-pack.html#topic-2-10"><text x="1520" y="940" class="small">2.10 Graphical solving</text></a>
+
+    <circle class="leaf" cx="1490" cy="1050" r="5"/>
+    <a href="practice-pack.html#topic-2-10"><text x="1520" y="1050" class="small">2.10 Analytical solving</text></a>
+
+    <circle class="leaf" cx="1490" cy="1160" r="5"/>
+    <a href="practice-pack.html#topic-2-10"><text x="1520" y="1160" class="small">2.10 Modelling equations</text></a>
+
+    <circle class="leaf" cx="1960" cy="1050" r="6"/>
+    <a href="practice-pack.html#logarithms-aa-hl2-ch3"><text x="1730" y="1000" class="label">AA HL2 Ch3</text></a>
+    <a href="practice-pack.html#topic-1-7"><text x="1990" y="1050" class="small">1.7 Logarithm laws</text></a>
+
+    <text x="1730" y="1038" class="tiny">inverse of exponentials, change of base, solving via logs</text>
+    <text x="1730" y="482" class="tiny">graph skills and inverse thinking connect back into the core branch</text>
   </svg>
+  </div>
 </div>
 </body>
 </html>
