@@ -3,199 +3,252 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Chace IB Math AA HL Test 2 Mind Map</title>
+  <title>Chace IB Math AA HL Test 2 Canvas Mindmap</title>
   <style>
     :root {
-      --bg: #f6f8fc;
-      --card: #ffffff;
-      --ink: #18212f;
-      --muted: #5e6b7a;
-      --line: #9eb6d8;
-      --accent: #356dff;
-      --accent2: #7a52ff;
-      --accent3: #0ea5a4;
-      --shadow: 0 12px 30px rgba(25, 40, 72, 0.10);
+      --bg: #2e3136;
+      --panel: #35393f;
+      --panel2: #3b4048;
+      --text: #e8edf3;
+      --muted: #bcc6d4;
+      --border: rgba(210,220,235,.22);
+      --line: #b6becb;
+      --teal: #31c7c9;
+      --teal-bg: rgba(49,199,201,.12);
+      --blue: #73c8ff;
+      --purple: #d18cff;
+      --gold: #f0d36b;
+      --shadow: 0 10px 30px rgba(0,0,0,.28);
     }
     * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color: var(--ink);
-      background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 55%);
+    html, body { margin: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+    body { padding: 22px; }
+    .toolbar { max-width: 1550px; margin: 0 auto 16px; color: var(--muted); }
+    .toolbar h1 { margin: 0 0 6px; font-size: 28px; color: var(--text); }
+    .toolbar p { margin: 0; line-height: 1.4; }
+    .canvas {
+      position: relative;
+      width: 1550px;
+      height: 980px;
+      margin: 0 auto;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at top, rgba(255,255,255,.03), transparent 30%),
+        linear-gradient(rgba(255,255,255,.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px),
+        var(--bg);
+      background-size: auto, 26px 26px, 26px 26px, auto;
+      overflow: hidden;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.04);
     }
-    a { color: inherit; text-decoration: none; }
-    .wrap { max-width: 1600px; margin: 0 auto; padding: 24px; }
-    .top { text-align: center; margin-bottom: 22px; }
-    .top h1 { margin: 0; font-size: 34px; }
-    .top p { margin: 8px auto 0; max-width: 900px; color: var(--muted); }
-
-    .map { position: relative; min-height: 1120px; overflow: auto; border-radius: 28px; background: rgba(255,255,255,0.55); backdrop-filter: blur(6px); box-shadow: inset 0 0 0 1px rgba(255,255,255,.6); }
-    svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-
-    .node {
+    .group {
       position: absolute;
-      width: 280px;
-      background: var(--card);
-      border-radius: 22px;
-      box-shadow: var(--shadow);
-      padding: 16px 18px;
-      border: 1px solid rgba(53,109,255,0.12);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
     }
-    .node h2, .node h3, .node h4 { margin: 0 0 8px; }
-    .node p { margin: 0; color: var(--muted); line-height: 1.4; }
-    .node ul { margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
-    .node li { margin: 5px 0; }
-    .pill { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .02em; padding: 6px 10px; border-radius: 999px; background: #eef4ff; color: #2952c8; margin-bottom: 8px; }
-    .code { display:inline-block; font-size:12px; font-weight:700; padding:4px 8px; border-radius:999px; background:#f3f6fb; margin:4px 6px 0 0; color:#3c4b5b; }
-    .mini { font-size: 12px; color: var(--muted); margin-top: 10px; }
-
-    #center { left: 655px; top: 70px; width: 320px; background: linear-gradient(135deg,#356dff,#7a52ff); color: white; }
-    #center p, #center .mini { color: rgba(255,255,255,.92); }
-    #center .pill { background: rgba(255,255,255,.18); color: white; }
-
-    #functions { left: 120px; top: 250px; }
-    #transforms { left: 120px; top: 650px; }
-    #further { left: 1180px; top: 250px; }
-    #exp { left: 1180px; top: 650px; }
-    #logs { left: 650px; top: 930px; width: 320px; }
-
-    .topic { position:absolute; width:240px; background:#fff; border-radius:18px; padding:12px 14px; box-shadow: var(--shadow); border:1px solid rgba(14,165,164,.10); }
-    .topic h4 { font-size: 16px; }
-    .topic p { font-size: 13px; color: var(--muted); line-height: 1.35; }
-
-    #t22 { left: 420px; top: 230px; }
-    #t23 { left: 420px; top: 390px; }
-    #t24 { left: 420px; top: 550px; }
-    #t25 { left: 420px; top: 710px; }
-    #t28 { left: 420px; top: 870px; }
-
-    #t211 { left: 420px; top: 1015px; }
-
-    #t111 { left: 930px; top: 220px; }
-    #t213 { left: 930px; top: 365px; }
-    #t214 { left: 930px; top: 510px; }
-    #t215 { left: 930px; top: 655px; }
-    #t216 { left: 930px; top: 800px; }
-
-    #t15 { left: 1185px; top: 1010px; }
-    #t29 { left: 1185px; top: 855px; }
-    #t210 { left: 1185px; top: 1160px; }
-    #t17 { left: 655px; top: 1210px; }
-
-    .topic:hover, .node:hover { transform: translateY(-2px); transition: .18s ease; }
-    .legend { margin-top: 16px; color: var(--muted); font-size: 13px; }
-    @media (max-width: 1450px) { .map { min-width: 1500px; } }
+    .group .gtitle {
+      position: absolute;
+      top: -34px;
+      left: 2px;
+      font-size: 18px;
+      color: #dfe6f1;
+    }
+    .card, .pill {
+      position: absolute;
+      background: var(--panel);
+      border: 1px solid rgba(215,225,240,.18);
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      color: var(--text);
+    }
+    .card { padding: 14px 16px; width: 250px; }
+    .card h3 { margin: 0 0 8px; font-size: 19px; font-weight: 600; }
+    .card h4 { margin: 0 0 8px; font-size: 15px; font-weight: 700; color: var(--blue); }
+    .card p { margin: 0; color: var(--muted); line-height: 1.4; font-size: 14px; }
+    .card ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14px; }
+    .card li { margin: 4px 0; }
+    .pill {
+      padding: 8px 12px;
+      width: auto;
+      min-width: 110px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--gold);
+      background: #333840;
+    }
+    .center {
+      background: var(--teal-bg);
+      border-color: rgba(49,199,201,.55);
+      box-shadow: 0 0 0 1px rgba(49,199,201,.15), 0 12px 28px rgba(0,0,0,.28);
+      width: 170px;
+      text-align: center;
+      font-weight: 700;
+      color: #bdf6f8;
+    }
+    .topic { background: #383d45; }
+    .topic h4 { color: var(--teal); }
+    .linkish { cursor: pointer; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; }
+    .linkish:hover { transform: translateY(-2px); border-color: rgba(255,255,255,.35); }
+    .small { font-size: 13px; }
+    .purple { color: var(--purple); }
+    .gold { color: var(--gold); font-style: italic; }
+    .blue { color: var(--blue); }
+    svg { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="top">
-      <h1>Chace IB Math AA HL Test 2, visual mind map</h1>
-      <p>A proper map of the test scope from Core HL 1 Chapter 15 and 16, plus AA HL 2 Chapters 2, 3, and 6. Click the big chapter cards or topic nodes to jump into the practice pack.</p>
+  <div class="toolbar">
+    <h1>Chace IB Math AA HL Test 2, canvas map</h1>
+    <p>Styled like a dark canvas board. Click any chapter or topic card to jump to the practice pack. Dashed links show cross-topic bridges, especially exponentials ↔ logarithms and rational functions ↔ partial fractions.</p>
+  </div>
+
+  <div class="canvas">
+    <svg viewBox="0 0 1550 980" preserveAspectRatio="none">
+      <defs>
+        <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#b6becb"></path>
+        </marker>
+      </defs>
+
+      <path d="M755 485 C 655 430, 610 345, 525 255" stroke="#b6becb" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <path d="M755 500 C 655 540, 610 620, 525 720" stroke="#b6becb" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <path d="M795 485 C 920 430, 975 345, 1040 245" stroke="#b6becb" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <path d="M795 500 C 930 565, 980 650, 1050 735" stroke="#b6becb" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+      <path d="M780 525 C 780 610, 780 660, 780 760" stroke="#b6becb" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M525 250 C 430 240, 335 225, 265 210" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M525 265 C 430 290, 335 315, 265 340" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M525 280 C 430 360, 335 410, 265 470" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M525 295 C 430 470, 335 505, 265 605" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M525 310 C 445 590, 340 620, 265 740" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M525 720 C 430 780, 350 820, 255 860" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M1040 245 C 1135 200, 1225 170, 1305 155" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1040 265 C 1135 255, 1220 270, 1305 290" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1040 285 C 1135 325, 1220 395, 1305 425" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1040 305 C 1135 405, 1220 520, 1305 560" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1040 325 C 1135 535, 1220 665, 1305 690" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M1050 735 C 1135 760, 1225 780, 1305 785" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1050 755 C 1135 820, 1225 870, 1305 900" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+      <path d="M1050 775 C 1125 900, 1215 950, 1305 960" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M780 760 C 780 820, 780 855, 780 900" stroke="#9aa3b1" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+
+      <path d="M255 860 C 420 930, 630 940, 780 900" stroke="#8b95a3" stroke-width="2" fill="none" stroke-dasharray="8 8"/>
+      <path d="M1305 785 C 1110 815, 940 855, 780 900" stroke="#8b95a3" stroke-width="2" fill="none" stroke-dasharray="8 8"/>
+      <path d="M1305 960 C 1080 995, 930 965, 780 900" stroke="#8b95a3" stroke-width="2" fill="none" stroke-dasharray="8 8"/>
+      <path d="M1305 425 C 1180 350, 1110 290, 265 605" stroke="#8b95a3" stroke-width="2" fill="none" stroke-dasharray="8 8"/>
+    </svg>
+
+    <div class="group" style="left:70px; top:90px; width:520px; height:730px;">
+      <div class="gtitle">CORE HL 1</div>
     </div>
 
-    <div class="map">
-      <svg class="links" viewBox="0 0 1600 1450" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="g1" x1="0" x2="1"><stop offset="0%" stop-color="#356dff"/><stop offset="100%" stop-color="#7a52ff"/></linearGradient>
-          <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-            <path d="M0,0 L8,4 L0,8 Z" fill="#7ea0dc"></path>
-          </marker>
-        </defs>
-
-        <path d="M815 200 C 620 220, 520 300, 400 350" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-        <path d="M815 200 C 620 290, 520 690, 400 760" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-        <path d="M815 200 C 1000 220, 1080 310, 1180 350" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-        <path d="M815 200 C 1000 290, 1080 700, 1180 760" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-        <path d="M815 200 C 815 380, 815 760, 810 960" stroke="url(#g1)" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
-
-        <line x1="400" y1="340" x2="420" y2="260" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="400" y1="355" x2="420" y2="420" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="400" y1="370" x2="420" y2="580" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="400" y1="385" x2="420" y2="740" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="400" y1="400" x2="420" y2="900" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="400" y1="760" x2="420" y2="1045" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-
-        <line x1="1180" y1="340" x2="1170" y2="250" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="355" x2="1170" y2="395" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="370" x2="1170" y2="540" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="385" x2="1170" y2="685" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="400" x2="1170" y2="830" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-
-        <line x1="1180" y1="760" x2="1185" y2="885" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="780" x2="1185" y2="1040" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-        <line x1="1180" y1="800" x2="1185" y2="1190" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-
-        <line x1="810" y1="1080" x2="810" y2="1210" stroke="#9eb6d8" stroke-width="2" marker-end="url(#arrow)"/>
-
-        <path d="M540 260 C 680 220, 820 220, 930 540" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
-        <path d="M1185 885 C 1060 950, 920 1100, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
-        <path d="M1185 1190 C 1030 1270, 920 1280, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
-        <path d="M420 1045 C 520 1160, 650 1210, 810 1235" stroke="#c8d5f0" stroke-width="2" fill="none" stroke-dasharray="6 6"/>
-      </svg>
-
-      <a class="node" id="center" href="practice-pack.html#overview">
-        <div class="pill">Central hub</div>
-        <h2>Test 2, linked ideas</h2>
-        <p>This test is really one big story about functions. Start with what a function is, move through graphing and transformations, then branch into rational, exponential, logarithmic, inequality, and modulus problems.</p>
-        <div class="mini">Clickable. Opens the practice pack overview.</div>
-      </a>
-
-      <a class="node" id="functions" href="practice-pack.html#functions-core-ch15">
-        <div class="pill">Core HL 1 • Chapter 15</div>
-        <h3>Functions</h3>
-        <p>Foundations: domain, range, graphs, composition, inverses, and interpreting function behaviour.</p>
-        <div><span class="code">2.2</span><span class="code">2.3</span><span class="code">2.4</span><span class="code">2.5</span><span class="code">2.8</span></div>
-      </a>
-
-      <a class="node" id="transforms" href="practice-pack.html#transformations-core-ch16">
-        <div class="pill">Core HL 1 • Chapter 16</div>
-        <h3>Transformation of Functions</h3>
-        <p>Translations, reflections, stretches, and how equations change graphs.</p>
-        <div><span class="code">2.11</span></div>
-      </a>
-
-      <a class="node" id="further" href="practice-pack.html#further-functions-aa-hl2-ch6">
-        <div class="pill">AA HL 2 • Chapter 6</div>
-        <h3>Further Functions</h3>
-        <p>Partial fractions, rational functions, odd/even ideas, graph inequalities, and modulus equations.</p>
-        <div><span class="code">1.11</span><span class="code">2.13</span><span class="code">2.14</span><span class="code">2.15</span><span class="code">2.16</span></div>
-      </a>
-
-      <a class="node" id="exp" href="practice-pack.html#exponential-functions-aa-hl2-ch2">
-        <div class="pill">AA HL 2 • Chapter 2</div>
-        <h3>Exponential Functions</h3>
-        <p>Exponent laws, exponential and logarithmic functions, and solving equations analytically or graphically.</p>
-        <div><span class="code">1.5</span><span class="code">2.9</span><span class="code">2.10</span></div>
-      </a>
-
-      <a class="node" id="logs" href="practice-pack.html#logarithms-aa-hl2-ch3">
-        <div class="pill">AA HL 2 • Chapter 3</div>
-        <h3>Logarithms</h3>
-        <p>The inverse language of exponentials. Log laws are the glue for solving and simplifying harder function equations.</p>
-        <div><span class="code">1.7</span></div>
-      </a>
-
-      <a class="topic" id="t22" href="practice-pack.html#topic-2-2"><h4>2.2 Function concept</h4><p>Domain, range, graph, notation, inverse idea, reflection in y = x.</p></a>
-      <a class="topic" id="t23" href="practice-pack.html#topic-2-3"><h4>2.3 Function graphs</h4><p>Sketching from information, sums and differences, reading graphs well.</p></a>
-      <a class="topic" id="t24" href="practice-pack.html#topic-2-4"><h4>2.4 Composite and inverse</h4><p>Composition, identity, intersections, and inverse-function thinking.</p></a>
-      <a class="topic" id="t25" href="practice-pack.html#topic-2-5"><h4>2.5 Modelling with functions</h4><p>Using function forms sensibly in context, including piecewise-style interpretation.</p></a>
-      <a class="topic" id="t28" href="practice-pack.html#topic-2-8"><h4>2.8 Function behaviour in context</h4><p>Interpreting what parameters and graph features actually mean in real situations.</p></a>
-      <a class="topic" id="t211" href="practice-pack.html#topic-2-11"><h4>2.11 Transformations</h4><p>Shift, reflect, stretch, compress, combine. Core graph fluency.</p></a>
-
-      <a class="topic" id="t111" href="practice-pack.html#topic-1-11"><h4>1.11 Partial fractions</h4><p>Break rational expressions into simpler pieces. Helpful for algebra and later calculus too.</p></a>
-      <a class="topic" id="t213" href="practice-pack.html#topic-2-13"><h4>2.13 Rational functions</h4><p>Asymptotes, zeros, intercepts, restrictions, and graph shape.</p></a>
-      <a class="topic" id="t214" href="practice-pack.html#topic-2-14"><h4>2.14 Odd, even, inverse</h4><p>Symmetry and domain restriction for inverse functions.</p></a>
-      <a class="topic" id="t215" href="practice-pack.html#topic-2-15"><h4>2.15 Graph inequalities</h4><p>When is one function above another? Read it graphically and solve it analytically.</p></a>
-      <a class="topic" id="t216" href="practice-pack.html#topic-2-16"><h4>2.16 Modulus equations/inequalities</h4><p>Absolute value creates distance-style thinking and split cases.</p></a>
-
-      <a class="topic" id="t29" href="practice-pack.html#topic-2-9"><h4>2.9 Exponential and logarithmic functions</h4><p>The shape and behaviour of growth/decay and their inverse partner.</p></a>
-      <a class="topic" id="t15" href="practice-pack.html#topic-1-5"><h4>1.5 Exponent laws</h4><p>Algebra fluency with powers, base 10, and base e.</p></a>
-      <a class="topic" id="t210" href="practice-pack.html#topic-2-10"><h4>2.10 Solving equations</h4><p>Use graphs and algebra to solve function equations in realistic settings.</p></a>
-      <a class="topic" id="t17" href="practice-pack.html#topic-1-7"><h4>1.7 Logarithm laws</h4><p>Change of base, rational exponents, and solving exponential equations via logs.</p></a>
+    <div class="group" style="left:1000px; top:80px; width:460px; height:680px;">
+      <div class="gtitle">AA HL 2, further functions</div>
     </div>
 
-    <div class="legend">Solid arrows show the chapter structure. Dashed links show concept bridges, for example rational functions ↔ partial fractions and exponentials ↔ logarithms.</div>
+    <div class="group" style="left:990px; top:775px; width:470px; height:170px;">
+      <div class="gtitle">AA HL 2, exponentials</div>
+    </div>
+
+    <div class="group" style="left:610px; top:820px; width:340px; height:110px;">
+      <div class="gtitle">AA HL 2, logarithms</div>
+    </div>
+
+    <a class="pill center linkish" style="left:690px; top:455px;" href="practice-pack.html#overview">FUNCTIONS</a>
+    <a class="pill linkish" style="left:540px; top:230px; color:#bff7f6; background:#304247; border-color:rgba(49,199,201,.35);" href="practice-pack.html#functions-core-ch15">Core Ch15</a>
+    <a class="pill linkish" style="left:535px; top:705px; color:#bff7f6; background:#304247; border-color:rgba(49,199,201,.35);" href="practice-pack.html#transformations-core-ch16">Core Ch16</a>
+    <a class="pill linkish" style="left:1045px; top:220px;" href="practice-pack.html#further-functions-aa-hl2-ch6">AA HL2 Ch6</a>
+    <a class="pill linkish" style="left:1055px; top:710px;" href="practice-pack.html#exponential-functions-aa-hl2-ch2">AA HL2 Ch2</a>
+    <a class="pill linkish" style="left:725px; top:760px;" href="practice-pack.html#logarithms-aa-hl2-ch3">AA HL2 Ch3</a>
+
+    <a class="card topic linkish" style="left:130px; top:140px;" href="practice-pack.html#topic-2-2">
+      <h4>2.2 What is a function?</h4>
+      <p>Domain, range, graph, notation, inverse idea, reflection in y = x.</p>
+    </a>
+    <a class="card topic linkish" style="left:130px; top:275px;" href="practice-pack.html#topic-2-3">
+      <h4>2.3 Graphs of functions</h4>
+      <p>Sketch from features, compare shapes, read intercepts and behaviour.</p>
+    </a>
+    <a class="card topic linkish" style="left:130px; top:405px;" href="practice-pack.html#topic-2-4">
+      <h4>2.4 Composite and inverse</h4>
+      <p>Compose functions, find inverses, think about identity and restrictions.</p>
+    </a>
+    <a class="card topic linkish" style="left:130px; top:540px;" href="practice-pack.html#topic-2-5">
+      <h4>2.5 Functions in context</h4>
+      <p>Use function models sensibly, including piecewise-style situations.</p>
+    </a>
+    <a class="card topic linkish" style="left:130px; top:675px;" href="practice-pack.html#topic-2-8">
+      <h4>2.8 Behaviour and interpretation</h4>
+      <p>Read what parameters and graph changes mean in real settings.</p>
+    </a>
+    <a class="card topic linkish" style="left:130px; top:800px; width:300px;" href="practice-pack.html#topic-2-11">
+      <h4>2.11 Transformations</h4>
+      <p>Translations, reflections, stretches, compressions, combined transformations.</p>
+    </a>
+
+    <a class="card topic linkish" style="left:1080px; top:110px;" href="practice-pack.html#topic-1-11">
+      <h4>1.11 Partial fractions</h4>
+      <p>Break rational expressions into simpler pieces. Important algebra bridge.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:245px;" href="practice-pack.html#topic-2-13">
+      <h4>2.13 Rational functions</h4>
+      <p>Asymptotes, zeros, intercepts, restrictions, inverse-style reasoning.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:380px;" href="practice-pack.html#topic-2-14">
+      <h4>2.14 Odd, even, inverse</h4>
+      <p>Symmetry and how domain restriction affects inverse functions.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:515px;" href="practice-pack.html#topic-2-15">
+      <h4>2.15 Inequalities of functions</h4>
+      <p>When is g(x) above or below f(x)? Solve graphically and algebraically.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:650px;" href="practice-pack.html#topic-2-16">
+      <h4>2.16 Modulus equations</h4>
+      <p>Absolute value creates split cases and distance-style thinking.</p>
+    </a>
+
+    <a class="card topic linkish" style="left:1080px; top:740px;" href="practice-pack.html#topic-1-5">
+      <h4>1.5 Exponent laws</h4>
+      <p>Powers, base 10, base e, and clean algebra with exponents.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:855px;" href="practice-pack.html#topic-2-9">
+      <h4>2.9 Exponential functions</h4>
+      <p>Growth, decay, inverse relationship with logarithms, graph shape.</p>
+    </a>
+    <a class="card topic linkish" style="left:1080px; top:970px;" href="practice-pack.html#topic-2-10">
+      <h4>2.10 Solving function equations</h4>
+      <p>Graphical and analytical solutions in realistic contexts.</p>
+    </a>
+
+    <a class="card topic linkish" style="left:645px; top:850px; width:270px;" href="practice-pack.html#topic-1-7">
+      <h4>1.7 Logarithm laws</h4>
+      <p>Rational exponents, change of base, and solving exponential equations using logs.</p>
+    </a>
+
+    <div class="card" style="left:325px; top:120px; width:180px;">
+      <h3 class="purple small">Core ideas</h3>
+      <ul>
+        <li><span class="purple">function language</span></li>
+        <li><span class="purple">graph reading</span></li>
+        <li><span class="purple">composition</span></li>
+        <li><span class="purple">inverse thinking</span></li>
+      </ul>
+    </div>
+
+    <div class="card" style="left:1185px; top:115px; width:215px;">
+      <h3 class="gold small">Key bridge</h3>
+      <p><span class="gold">Rational functions</span> often connect back to <span class="blue">partial fractions</span>, asymptotes, and inverse/domain restrictions.</p>
+    </div>
+
+    <div class="card" style="left:1185px; top:815px; width:215px;">
+      <h3 class="gold small">Key bridge</h3>
+      <p><span class="gold">Exponentials</span> and <span class="blue">logarithms</span> are inverse partners. This is one of the most important links in the whole test.</p>
+    </div>
   </div>
 </body>
 </html>
